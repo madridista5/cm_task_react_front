@@ -1,11 +1,19 @@
 import React from 'react';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {Welcome} from "./pages/Welcome/Welcome";
+import {Products} from "./pages/Products/Products";
+import {Info} from "./pages/Info/Info";
 
 import './App.css';
 
 export const App = () => {
-  return (
-    <div className="App">
-      Coffee Mug - task
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Welcome/>}/>
+                <Route path="/products" element={<Products/>}/>
+                <Route path="/info" element={<Info/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
