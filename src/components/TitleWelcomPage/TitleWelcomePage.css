@@ -1,0 +1,57 @@
+.app__welcome-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.app__welcome-title h1 {
+    color: var(--color-dark-blue);
+    text-shadow: 0 0 5px var(--color-white);
+}
+
+.app__welcome-title_info {
+    margin-top: 1.5rem;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--color-white);
+    opacity: 1;
+    animation: appear 5s linear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__welcome-title {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__welcome-title {
+        width: 70%;
+    }
+    .app__welcome-title_info {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__welcome-title {
+        width: 80%;
+    }
+}
