@@ -1,7 +1,8 @@
 import React, {useEffect, useRef} from "react";
+import {OpacityVideo} from "../../components/OpacityVideo/OpacityVideo";
+import {TitleWelcomePage} from "../../components/TitleWelcomPage/TitleWelcomePage";
 
 import './Welcome.css';
-import {OpacityVideo} from "../../components/OpacityVideo/OpacityVideo";
 
 export const Welcome = () => {
     const vidRef = useRef<HTMLVideoElement | null>(null);
@@ -21,6 +22,7 @@ export const Welcome = () => {
                 className="app__welcome-video"
             />
             <OpacityVideo/>
+            <TitleWelcomePage/>
         </div>
     );
 }
