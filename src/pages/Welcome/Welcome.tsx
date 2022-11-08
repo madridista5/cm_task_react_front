@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from "react";
+import { BtnOpenApp } from "../../components/BtnOpenApp/BtnOpenApp";
 import {OpacityVideo} from "../../components/OpacityVideo/OpacityVideo";
 import {TitleWelcomePage} from "../../components/TitleWelcomPage/TitleWelcomePage";
 
@@ -23,6 +24,7 @@ export const Welcome = () => {
             />
             <OpacityVideo/>
             <TitleWelcomePage/>
+            <BtnOpenApp/>
         </div>
     );
 }

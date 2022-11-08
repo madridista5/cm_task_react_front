@@ -17,15 +17,15 @@
     line-height: 34px;
     color: var(--color-white);
     opacity: 1;
-    animation: description 4s linear;
+    animation: appear 5s linear;
 }
 
-@keyframes description {
+@keyframes appear {
     0% {
         opacity: 0;
     }
 
-    80% {
+    60% {
         opacity: 0;
     }
 
