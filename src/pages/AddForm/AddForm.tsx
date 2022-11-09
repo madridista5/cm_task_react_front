@@ -36,11 +36,15 @@ export const AddForm = () => {
 
             if(res.status === 201) {
                 navigate('/info', {
-                    state: 'Przedmiot został dodany.',
+                    state: {
+                        data: `Przedmiot "${name}" został dodany.`,
+                    },
                 });
             } else {
                 navigate('/info', {
-                    state: 'Wystąpił błąd, spróbuj ponownie za kilka minut.',
+                    state: {
+                        data: 'Wystąpił błąd, spróbuj ponownie za kilka minut.',
+                    },
                 });
             }
         })();
