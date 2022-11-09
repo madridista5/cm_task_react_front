@@ -12,6 +12,7 @@ export const AddForm = () => {
     const [product, setProduct] = useState<ProductEntity>({
         name: '',
         price: 1,
+        updateDate: null,
     });
     const navigate = useNavigate();
 
