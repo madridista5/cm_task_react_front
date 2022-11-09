@@ -44,8 +44,21 @@ export const TableProductsPage = () => {
         }
     };
 
+    const showDetails = (id: string | undefined, name: string, price: number, updateDate: Date | null) => {
+
+        navigate('/product/details', {
+            state: {
+                id,
+                name,
+                price,
+                updateDate,
+            },
+        });
+    };
+
     return (
         <div className="app__products-table section__padding">
+
             {products.length === 0
                 ? <Spinner/>
                 : <table className="app__products-table_table">
@@ -60,7 +73,7 @@ export const TableProductsPage = () => {
                     <tbody>
                     {products.map(product => <tr key={product.id}>
                         <td>{product.name}</td>
-                        <td>Szczegóły</td>
+                        <td onClick={() => showDetails(product.id, product.name, product.price, product.updateDate)}>Szczegóły</td>
                         <td onClick={() => handleEdit(product.id)}>Edytuj</td>
                         <td onClick={() => deleteProduct(product.id, product.name)}>Usuń</td>
                     </tr>)}
