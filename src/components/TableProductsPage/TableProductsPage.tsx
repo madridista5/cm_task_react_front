@@ -26,6 +26,24 @@ export const TableProductsPage = () => {
         });
     };
 
+    const deleteProduct = async (id: string | undefined, name: string) => {
+        const res = await axiosData.delete(`/product/delete/${id}`);
+
+        if(res.status === 204) {
+            navigate('/info', {
+                state: {
+                    data: `Przedmiot "${name}" został usunięty.`,
+                },
+            });
+        } else {
+            navigate('/info', {
+                state: {
+                    data: 'Wystąpił błąd, spróbuj ponownie za kilka minut.',
+                },
+            });
+        }
+    };
+
     return (
         <div className="app__products-table section__padding">
             {products.length === 0
@@ -44,7 +62,7 @@ export const TableProductsPage = () => {
                         <td>{product.name}</td>
                         <td>Szczegóły</td>
                         <td onClick={() => handleEdit(product.id)}>Edytuj</td>
-                        <td>Usuń</td>
+                        <td onClick={() => deleteProduct(product.id, product.name)}>Usuń</td>
                     </tr>)}
                     </tbody>
                 </table>}
