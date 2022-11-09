@@ -7,8 +7,6 @@ import { ProductEntityResponse } from "types";
 import {axiosData} from "../../utils/axiosData";
 import {apiUrl} from "../../config/api";
 
-import './EditForm.css';
-
 interface StateLocation {
     data: string,
 }
