@@ -1,0 +1,4 @@
+.app__products-table {
+    background-size: cover;
+    background: url('../../assets/background.jpg') repeat fixed center;
+}
