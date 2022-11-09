@@ -1,4 +1,56 @@
 .app__products-table {
     background-size: cover;
     background: url('../../assets/background.jpg') repeat fixed center;
+    min-height: 30vh;
+    text-align: center;
+}
+
+.app__products-table_table {
+    margin: 0 auto;
+    font-size: 25px;
+    color: var(--color-white);
+}
+
+.app__products-table_table th {
+    background-color: var(--color-dark-red);
+    padding: 0.5rem 1rem;
+}
+
+.app__products-table_table td {
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 0.5rem 1rem;
+}
+
+.app__products-table_table td:nth-of-type(2),
+ .app__products-table_table td:nth-of-type(3),
+ .app__products-table_table td:nth-of-type(4) {
+     cursor: pointer;
+    transition: 0.3s;
+ }
+
+.app__products-table_table td:nth-of-type(2):hover,
+.app__products-table_table td:nth-of-type(3):hover,
+.app__products-table_table td:nth-of-type(4):hover {
+    color: var(--color-dark-blue);
+    background-color: var(--color-light-beige);
+}
+
+@media screen and (max-width: 850px) {
+    .app__products-table_table {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__products-table_table {
+        font-size: 18px;
+    }
+
+    .app__products-table_table th {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .app__products-table_table td {
+        padding: 0.3rem 0.5rem;
+    }
 }
