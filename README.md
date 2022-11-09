@@ -1,46 +1,138 @@
-# Getting Started with Create React App
+<h1>See how this application works:</h1>
+<br>
+Live version: https://coffeemug.task.networkmanager.pl
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+- [About the Project](#star2-about-the-project)
+  * [Description](#star-description)
+  * [Screenshots](#camera-screenshots)
+  * [Tech Stack](#space_invader-tech-stack)
+- [Getting Started](#toolbox-getting-started)
+  * [Prerequisites](#bangbang-prerequisites)
+  * [Run Locally](#running-run-locally)
 
-In the project directory, you can run:
+  
 
-### `npm start`
+<!-- About the Project -->
+## :star2: About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- Description -->
+### :star: Description
+<p>With the "Mange Your Products APP" you can manage products in your store or warehouse very easy. You can add, edit, delete or see the details of each product.</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- Screenshots -->
+### :camera: Screenshots
 
-### `npm test`
+<p>1. Home page:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/1.png" alt="screenshot" />
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<p>2. Header and Navbar:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/2.png" alt="screenshot" />
+</div>
 
-### `npm run build`
+<br>
+<p>3. Table of products:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/3.png" alt="screenshot" />
+</div>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
+<p>4. Footer:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/4.png" alt="screenshot" />
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<p>5. Add product form:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/5.png" alt="screenshot" />
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
+<p>6. Edit product form:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/6.png" alt="screenshot" />
+</div>
 
-### `npm run eject`
+<br>
+<p>7. Product details view:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/7.png" alt="screenshot" />
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
+<p>8. You can delete a product:</p>
+<div align="center"> 
+  <img src="https://github.com/madridista5/cm_task_react_front/blob/develop/screenshots/8.png" alt="screenshot" />
+</div>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- TechStack -->
+### :space_invader: Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-## Learn More
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    <li><a href="https://expressjs.com">Express.js</a></li>  
+    <li><a href="https://nodejs.org/en/">Node.js</a></li>
+  </ul>
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.mysql.com">MySQL</a></li>  
+  </ul>
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+<!-- Getting Started -->
+## 	:toolbox: Getting Started
+
+<!-- Prerequisites -->
+### :bangbang: Prerequisites
+
+This project uses npm as package manager
+
+
+<!-- Run Locally -->
+### :running: Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/madridista5/cm_task_react_front.git
+```
+
+Go to the project directory
+
+```bash
+  cd cm_task_react_front
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the application
+
+```bash
+  react-app-rewired start
+```

@@ -1,0 +1,24 @@
+.app__products-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-light-beige);
+    height: 20vh;
+}
+
+.app__products-header_img_wrapper img {
+    height: 100%;
+    padding: 1rem;
+}
+
+.app__products-header h1 {
+    align-self: center;
+    color: var(--color-dark-red);
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .app__products-header h1 {
+        font-size: 2rem;
+    }
+}

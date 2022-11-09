@@ -1,0 +1,15 @@
+.app__info {
+    background-size: cover;
+    background: url('../../assets/background.jpg') repeat fixed center;
+    display: flex;
+    justify-content: center;
+}
+
+.app__info-info {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    color: var(--color-light-beige);
+    text-align: center;
+    font-size: 20px;
+}

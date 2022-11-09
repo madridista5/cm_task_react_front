@@ -1,0 +1,38 @@
+.app__products-navbar {
+    padding: 3vh 0;
+    background-color: var(--color-light-beige);
+    display: flex;
+}
+
+.app__products-ul {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app__products-ul a {
+    display: block;
+    background-color: var(--color-light-beige);
+    border: 2px solid var(--color-dark-red);
+    color: var(--color-dark-red);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.app__products-ul a:hover {
+    background-color: var(--color-dark-red);
+    color: var(--color-light-beige);
+}
+
+@media screen and (max-width: 450px) {
+    .app__products-ul {
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+    }
+}
