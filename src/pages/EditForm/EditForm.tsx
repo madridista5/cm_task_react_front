@@ -3,7 +3,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 import {HeaderProductsPage} from "../../components/HeaderProductsPage/HeaderProductsPage";
 import {NavbarProductsPage} from "../../components/NavbarProductsPage/NavbarProductsPage";
 import {FooterProductsPage} from "../../components/FooterProductsPage/FooterProductsPage";
-import { ProductEntityResponse } from "types";
+import { ProductEntity } from "types";
 import {axiosData} from "../../utils/axiosData";
 import {apiUrl} from "../../config/api";
 
@@ -12,7 +12,7 @@ interface StateLocation {
 }
 
 export const EditForm = () => {
-    const [product, setProduct] = useState<ProductEntityResponse>({
+    const [product, setProduct] = useState<ProductEntity>({
         name: '',
         price: 1,
         id: '',
