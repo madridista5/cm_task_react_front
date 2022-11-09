@@ -2,11 +2,13 @@ import React, {useEffect, useState} from "react";
 import {AllProductsResponse} from 'types';
 import {axiosData} from "../../utils/axiosData";
 import {Spinner} from "../Spinner/Spinner";
+import {useNavigate} from "react-router-dom";
 
 import './TableProductsPage.css';
 
 export const TableProductsPage = () => {
     const [products, setProducts] = useState<AllProductsResponse>([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         (async () => {
@@ -15,6 +17,14 @@ export const TableProductsPage = () => {
             setProducts(data);
         })();
     }, []);
+
+    const handleEdit = (id: string | undefined) => {
+        navigate('/edit', {
+            state: {
+                data: id,
+            },
+        });
+    };
 
     return (
         <div className="app__products-table section__padding">
@@ -33,7 +43,7 @@ export const TableProductsPage = () => {
                     {products.map(product => <tr key={product.id}>
                         <td>{product.name}</td>
                         <td>Szczegóły</td>
-                        <td>Edytuj</td>
+                        <td onClick={() => handleEdit(product.id)}>Edytuj</td>
                         <td>Usuń</td>
                     </tr>)}
                     </tbody>

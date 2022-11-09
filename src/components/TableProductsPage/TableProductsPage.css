@@ -22,11 +22,11 @@
 }
 
 .app__products-table_table td:nth-of-type(2),
- .app__products-table_table td:nth-of-type(3),
- .app__products-table_table td:nth-of-type(4) {
-     cursor: pointer;
+.app__products-table_table td:nth-of-type(3),
+.app__products-table_table td:nth-of-type(4) {
+    cursor: pointer;
     transition: 0.3s;
- }
+}
 
 .app__products-table_table td:nth-of-type(2):hover,
 .app__products-table_table td:nth-of-type(3):hover,
