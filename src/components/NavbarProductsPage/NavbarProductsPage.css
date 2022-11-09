@@ -1,0 +1,28 @@
+.app__products-navbar {
+    height: 10vh;
+    background-color: var(--color-light-beige);
+}
+
+.app__products-ul {
+    height: 10vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app__products-ul a {
+    background-color: var(--color-light-beige);
+    border: 2px solid var(--color-dark-red);
+    color: var(--color-dark-red);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.app__products-ul a:hover {
+    background-color: var(--color-dark-red);
+    color: var(--color-light-beige);
+}
